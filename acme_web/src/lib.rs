@@ -1,6 +1,5 @@
 mod app;
 mod register;
-
 use leptos::{logging, mount_to_body, view};
 use crate::app::App;
 

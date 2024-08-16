@@ -1,0 +1,12 @@
+[workspace]
+members = ["shared", "acme_be", "acme_web"]
+resolver = "1"
+
+[workspace.package]
+authors = ["dragos"]
+rust-version = "1.71.0"
+
+[workspace.dependencies]
+anyhow = "1.0.86"
+crux_core = "0.8.0"
+serde = "1.0.204"
