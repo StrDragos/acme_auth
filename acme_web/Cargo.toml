@@ -1,0 +1,28 @@
+[package]
+name = "acme_web"
+version = "0.1.0"
+edition = "2021"
+authors.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+leptos = { version = "0.6.13", features = ["csr"] }
+leptos_meta = "0.6.13"
+leptos_router = {version ="0.6.13", features=["csr"]}
+console_error_panic_hook = {version = "0.1.7"}
+wasm-bindgen = { version = "0.2", optional = true }
+regex="1.10.5"
+
+[lib]
+crate-type = ["cdylib"]
+
+[package.metadata.leptos]
+output-name = "tailwind"
+site-root = "target/site"
+site-pkg-dir = "pkg"
+style-file = "style/output.css"
+assets-dir = "public"
+site-addr = "127.0.0.1:3000"
+reload-port = 3001
+browserquery = "defaults"
+bin-default-features = false
