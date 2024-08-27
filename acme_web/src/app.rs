@@ -13,6 +13,7 @@ pub fn App() -> impl IntoView {
                 <Routes>
                     <Route path="/" view= move || {
                         view! {
+                            //TODO add function to check if the user is authenticated
                             <Show when=move|| {false} fallback=|| view! {<Redirect path="/register"/>} >
                                 <Home />
                             </Show>
