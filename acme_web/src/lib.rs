@@ -1,5 +1,7 @@
 mod app;
 mod register;
+mod login_or_registration;
+mod home;
 use leptos::{logging, mount_to_body, view};
 use crate::app::App;
 
